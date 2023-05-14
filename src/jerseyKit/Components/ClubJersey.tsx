@@ -1,15 +1,23 @@
-import {Image, ImageSourcePropType, Text, View} from 'react-native';
+import {
+  Image,
+  ImageSourcePropType,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 
 type ClubJerseyProps = {
   image: ImageSourcePropType;
   club: string;
   kitType: string;
   year: string;
+  onPress: () => void;
 };
 
 const ClubJersey = (props: ClubJerseyProps) => {
   return (
-    <View
+    <TouchableOpacity
+      onPress={props.onPress}
       style={{
         height: 270,
         width: 200,
@@ -72,7 +80,7 @@ const ClubJersey = (props: ClubJerseyProps) => {
       <Text style={{color: 'white', fontSize: 16, fontWeight: '600'}}>
         {props.kitType} {props.year}
       </Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
