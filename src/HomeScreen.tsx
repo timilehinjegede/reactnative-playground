@@ -67,7 +67,7 @@ const HomeScreen = ({navigation}: any) => {
           />
           <ModuleBoxItem
             title={'Jersey\nKit'}
-            onPress={() => navigation.navigate('')}
+            onPress={() => navigation.navigate('JerseyKit')}
           />
         </View>
       </View>
