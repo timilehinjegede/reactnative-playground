@@ -6,11 +6,11 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import HomeScreen from './HomeScreen';
 import ForecastClubScreen from './forecastClub/ForecastClubScreen';
+import ForecastClubLoginScreen from './forecastClub/ForecastClubLoginScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -25,9 +25,18 @@ function App(): JSX.Element {
             headerShown: false,
           }}
         />
+
+        {/* forecast user interfaces  */}
         <Stack.Screen
           name="ForecastClub"
           component={ForecastClubScreen}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="ForecastClubLogin"
+          component={ForecastClubLoginScreen}
           options={{
             headerShown: false,
           }}

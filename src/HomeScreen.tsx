@@ -5,14 +5,7 @@ import {
   SafeAreaView,
   StyleSheet,
   TouchableOpacity,
-  TouchableHighlight,
 } from 'react-native';
-import {
-  NavigationAction,
-  NavigationContainer,
-  NavigationProp,
-} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 type BoxProps = {title: string; onPress: () => void};
 
