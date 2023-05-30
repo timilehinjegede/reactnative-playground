@@ -8,6 +8,7 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {createDrawerNavigator} from '@react-navigation/drawer';
 import HomeScreen from './HomeScreen';
 import ForecastClubScreen from './forecastClub/ForecastClubScreen';
 import ForecastClubLoginScreen from './forecastClub/ForecastClubLoginScreen';
@@ -15,6 +16,7 @@ import JerseyKitScreen from './jerseyKit/JerseyKitScreen';
 import JerseyKitDetailsScreen from './jerseyKit/JerseyKitDetailsScreen';
 
 const Stack = createNativeStackNavigator();
+const Drawer = createDrawerNavigator();
 
 function App(): JSX.Element {
   return (
