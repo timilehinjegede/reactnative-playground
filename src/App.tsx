@@ -14,6 +14,7 @@ import ForecastClubScreen from './forecastClub/ForecastClubScreen';
 import ForecastClubLoginScreen from './forecastClub/ForecastClubLoginScreen';
 import JerseyKitScreen from './jerseyKit/JerseyKitScreen';
 import JerseyKitDetailsScreen from './jerseyKit/JerseyKitDetailsScreen';
+import PlayWithForms from './forms/Forms';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -61,6 +62,8 @@ function App(): JSX.Element {
             headerShown: false,
           }}
         />
+
+        <Stack.Screen name="Forms" component={PlayWithForms} />
       </Stack.Navigator>
     </NavigationContainer>
   );

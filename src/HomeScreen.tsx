@@ -62,20 +62,11 @@ const HomeScreen = ({navigation}: any) => {
               onPress={() => navigation.navigate('ForecastClub')}
             />
             <ModuleBoxItem
-              title={'Dukandar\nShopping'}
-              onPress={() => navigation.navigate('')}
-            />
-          </View>
-          <View style={styles.rowStyle}>
-            <ModuleBoxItem
-              title={'Travel\nService'}
-              onPress={() => navigation.navigate('')}
-            />
-            <ModuleBoxItem
               title={'Jersey\nKit'}
               onPress={() => navigation.navigate('JerseyKit')}
             />
           </View>
+
           <Text
             style={[
               styles.welcomeText,
@@ -115,7 +106,10 @@ const HomeScreen = ({navigation}: any) => {
             Misc
           </Text>
           <View style={styles.rowStyle}>
-            <ModuleBoxItem title={''} onPress={() => undefined} />
+            <ModuleBoxItem
+              title={'Forms'}
+              onPress={() => navigation.navigate('Forms')}
+            />
             <ModuleBoxItem title={''} onPress={() => undefined} />
           </View>
         </View>
